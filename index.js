@@ -1,6 +1,6 @@
 import express from "express";
 import cors from "cors";
-import { dataRouter } from "./Router/datarouter";
+import { dataRouter } from "./Router/datarouter.js";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
 

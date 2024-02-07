@@ -1,5 +1,5 @@
 import express from "express";
-import Qrdata from "../DB/db-schema";
+import Qrdata from "../DB/db-schema.js";
 
 export let dataRouter = express.Router();
 
