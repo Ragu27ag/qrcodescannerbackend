@@ -14,7 +14,7 @@ app.get("/health", (req, res) => res.send("up and running"));
 app.use("/scannedData", dataRouter);
 
 mongoose
-  .connect("mongodb://localhost:27017/qrcode")
+  .connect(process.env.DB_STRING)
   .then(() =>
     app.listen("5000", () =>
       console.log("server is running && db is connected")
